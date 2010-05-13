@@ -1,0 +1,460 @@
+body {
+    margin: 0 20px;
+    background: #fff url(/images/g.png) no-repeat fixed right;
+    font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2", Georgia, serif; 
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+a img { border: 0; }
+img { line-height:0px; }
+
+
+/* =====================
+
+TYPE
+
+======================== */
+
+h1 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    -webkit-text-stroke:1px transparent;
+}
+
+h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p { margin: 20px 0; }
+
+p.first { margin-top: 0; }
+
+a {
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+a:hover {
+    border-bottom: 1px solid #555;
+}
+
+/* =====================
+
+HEADER
+
+======================== */
+
+#header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+#headerwrap {
+    width: 970px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#headerwrap .nav1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#headerwrap .nav2 {
+    position: absolute;
+    left: 220px;
+    top: 20px;
+}
+
+#headerwrap .nav3 {
+    position: absolute;
+    left: 330px;
+    top: 20px;
+}
+
+#headerwrap .nav1 a, #headerwrap .nav2 a, #headerwrap .nav3 a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#headerwrap .nav1 a.active, #headerwrap .nav2 a.active, #headerwrap .nav3 a.active {
+    color: #000;
+    text-decoration: underline;
+}
+
+#headerwrap .nav1 a:hover, #headerwrap .nav2 a:hover, #headerwrap .nav3 a:hover {
+    text-decoration: underline;
+}
+
+#headerwrap .namebadge {
+    position: absolute;
+    left: 770px;
+    top: 21px;
+    width: 220px;
+    padding-top: 20px;
+    background: url('../_img/trees.png') no-repeat top left;
+}
+
+#headerwrap .namebadge h1 {
+    line-height: 20px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body#home #headerwrap .namebadge h1 {
+    width: 180px;
+    background: none;
+}
+
+#headerwrap .namebadge h1 span {
+    color: #555;
+    font-weight: normal;
+}
+
+/* =====================
+
+FOOTER
+
+======================== */
+
+#footer {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #555;
+}
+
+#footer .left {
+    float: none;
+}
+
+
+/* =====================
+
+BLACK BACKGROUND CHANGES
+
+======================== */
+
+body.black{
+    background-color: #222;
+    color: #ccc;
+}
+
+body.black #footer {
+    color: #bbb;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+body.black #headerwrap a {
+    color: #999;
+}
+
+body.black #header {
+    background-color: #222;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+body.black a.monogram { background-image: url(/_img/monogram-wh.png); }
+
+body.black #headerwrap .namebadge {
+    background: url('../_img/trees-wh.png') no-repeat top left;
+}
+
+body.black #headerwrap .namebadge h1 {
+    color: #fff;
+}
+
+body.black #headerwrap .nav1 a.active, body.black #headerwrap .nav2 a.active, body.black #headerwrap .nav3 a.active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+body.black #headerwrap .namebadge h1 span {
+    color: #999;
+}
+
+/* =====================
+
+COLOR BACKGROUND CHANGES
+
+======================== */
+
+
+body.color #headerwrap .nav1 a, body.color #headerwrap .nav2 a, body.color #headerwrap .nav3 a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body.color #headerwrap .nav1 a.active, body.color #headerwrap .nav2 a.active, body.color #headerwrap .nav3 a.active {
+    color: #000;
+    text-decoration: underline;
+}
+
+body.color #headerwrap .namebadge h1 {
+    color: #000;
+}
+
+body.color #headerwrap h1 span {
+    color: #fff;
+}
+
+
+/* =====================
+
+CONTENT AREA
+
+======================== */
+
+
+#content {
+    width: 970px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
+    min-height: 500px;
+}
+
+.vertsep {
+    width: 970px;
+    height: 30px;
+    background: url(/_img/bg_vertlinessep.gif);
+    margin: 20px 0 23px 0;
+}
+
+.linesep {
+    width:100%;
+    height: 4px;
+    background-color: #ccc;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================
+
+HOMEPAGE / WORK
+
+======================== */
+
+body#home h1 {
+    font-size: 50px;
+    line-height: 60px;
+    width: 640px;
+    background: url(/_img/bg_slash.png) no-repeat top right;
+    padding-right: 110px;
+    color: #555;
+    float: left;
+    margin-right: 20px;
+    -webkit-text-stroke: 1px transparent;
+    padding-bottom: 40px;
+}
+
+body#home h1 span {
+    color: #000;
+}
+
+body#home p.desc {
+    float: left;
+    padding-top: 57px;
+    font-size: 13px;
+}
+
+
+body#home h2 {
+    margin: 20px 0 40px 0;
+}
+
+body#home .col3 a {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 21px;
+    text-decoration: none;
+    -webkit-text-stroke: 1px transparent;
+    line-height: 38px;
+    height: 40px;
+}
+
+.globe {
+    margin-bottom: 10px;
+    margin-left: -25px;
+    display: block;
+}
+
+body#home .col3 a.blue:hover, body#home .col3 a.orange:hover, body#home .col3 a.green:hover, body#home .col3 a.gold:hover, body#home .col3 a.purple:hover, body#home .col3 a.teal:hover { background-color: #333; }
+
+body#home .col3 a.blue { background-color: #40bbc8; }
+body#home .col3 a.orange { background-color: #e8481e; }
+body#home .col3 a.green { background-color: #a7bc3a; }
+body#home .col3 a.gold { background-color: #d1a73f; }
+body#home .col3 a.purple { background-color: #9e64a4; }
+body#home .col3 a.teal { background-color: #5cc19c; }
+
+/* =====================
+
+PROFILE
+
+======================== */
+
+.profileicon {
+    margin-top: -5px;
+}
+
+/* =====================
+
+BIG IDEAS
+
+======================== */
+
+.circleblack {
+    background: url(../_img/bg_circleblack.png) no-repeat #fff center center;
+    height: 173px;
+    width: 173px;
+    padding: 15px;
+    padding-top: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.circleblack h2 {
+    color: #fff;
+    line-height: 120%;
+}
+
+.circleblack h2 span {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    padding: 0 5px 7px 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    margin-bottom: 7px;
+}
+
+.circleblack.tealcircle { background-color: #72c9a8; }
+.circleblack.redcircle { background-color: #eb5e3a; }
+.circleblack.bluecircle { background-color: #71cad5; }
+.circleblack.goldcircle { background-color: #d7b257; }
+.circleblack.greencircle { background-color: #bdcf58; }
+.circleblack.purplecircle { background-color: #ab77af; }
+
+
+/* =====================
+
+BIG IDEAS
+
+======================== */
+
+
+/* body#ethos, body#ethos #header {
+    background-color: #5bb8ff;
+}*/
+
+body#ethos #content h1 {
+    font-size: 70px;
+    line-height: 80px;
+    margin: 0 0 60px 0;
+    color: #fff;
+}
+
+/* =====================
+
+MISC
+
+======================== */
+
+.miscwrap {
+    background: url(../misc/bg_misc.jpg) no-repeat;
+    display: block;
+    padding-left: 113px;
+    padding-top: 151px;
+    width: 599px;
+    height: 534px;
+    margin: 25px auto 50px auto;
+}
+
+/* =====================
+
+SHOP
+
+======================== */
+
+.shopannounce {
+    background-color: #eee;
+    padding: 8px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+/* =====================
+
+FAQ
+
+======================== */
+
+body#faq h2 {
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+body#faq #content {
+    width: 990px;
+}
+
+.question {
+    width: 420px;
+    float: left;
+    margin-right: 20px;
+}
+
+body#faq #content h1 {
+    margin-bottom: 0px;
+}
+
+.tealtxt { color: #72c9a8; }
+.blood { color: #E20131; }
+/*.redtxt { color:#eb5e3a; }*/
+.bluetxt { color: #71cad5; }
+.goldtxt { color: #d7b257; }
+.greentxt { color: #bdcf58; }
+.purpletxt { color: #ab77af; }

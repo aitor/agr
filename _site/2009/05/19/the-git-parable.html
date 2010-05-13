@@ -7,21 +7,66 @@
    <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
+   <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+   <link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
+   <link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
+   <!--<link rel="stylesheet" type="text/css" media="all" href="css/screen.css" />-->
+   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
    <!-- Typekit -->
-
-
+   <script type="text/javascript" src="http://use.typekit.com/usl8few.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+   <style>
+      #hi{
+        color: #555;
+        font-size: 50px;
+        font-weight: normal;
+        line-height: 60px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+        padding-right: 110px;
+      }
+   </style>
 </head>
 <body>
-
-<div class="site">
-  <div class="title">
-    <a href="/">Aitor García Rey</a>
-    <a class="extra" href="/">home</a>
+  <div id="header"> 
+    <div id="headerwrap"> 
+      <div class="nav1"> 
+        <a href="http://work.frankchimero.com" class="active">Work</a> 
+        <a href="http://shop.frankchimero.com">Shop</a> 
+        <a href="http://profile.frankchimero.com">Profile</a> 
+        <h3><a href="">Labora</a></h3>
+      </div>
+    </div> 
   </div>
-  
-  <div id="post">
+  <div class="container_16">
+    <div class="grid_14 suffix_2">
+      <h1 id="hi">
+        Good Morning Sir, <br/>
+        I'm <span class="blood">Aitor García</span> a <em>renaissance</em> web worker.
+      </h1>
+      <h2>
+        Aitor García
+      </h2>
+      <h3>
+        Labora
+      </h3>
+      <h3>
+        <a href="">Labora</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="">Ethica</a>
+      </h3>   
+    </div>  
+    <div class="clear"></div>
+    <div class="grid_8">
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="grid_8">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>                   
+      <div id="post">
 <h1>The Git Parable</h1>
 <p class="meta">19 May 2009 &#8211; San Francisco</p>
 <p>Git is a simple, but extremely powerful system. Most people try to teach Git by demonstrating a few dozen commands and then yelling &#8220;tadaaaaa.&#8221; I believe this method is flawed. Such a treatment may leave you with the ability to use Git to perform simple tasks, but the Git commands will still feel like magical incantations. Doing anything out of the ordinary will be terrifying. Until you understand the concepts upon which Git is built, you&#8217;ll feel like a stranger in a foreign land.</p>
@@ -117,7 +162,19 @@
     
   </ul>
 </div>
-  
+      
+    </div>
+    <!-- end .grid_16 -->
+    <div class="clear"></div>
+  </div>
+  <!-- end .container_16 -->
+<div class="site">
+  <div class="title">
+    <a href="/">Aitor García Rey</a>
+    <a class="extra" href="/">home</a>
+  </div>
+
+
   <div class="footer">
     <div class="contact">
       <p>
@@ -125,18 +182,6 @@
         Cofounder of <a href="http://www.linkingpaths.com">Linking Paths</a><br />
         aitor.garcia@gmail.com
       </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/mojombo/">github.com/mojombo</a><br />
-        <a href="http://twitter.com/mojombo/">twitter.com/mojombo</a><br />
-        <a href="http://flickr.com/photos/mojombo/">flickr.com/photos/mojombo</a>
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/tom-preston-werner">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
     </div>
   </div>
 </div>
