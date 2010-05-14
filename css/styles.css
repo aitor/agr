@@ -1,7 +1,7 @@
 body {
     margin: 0 20px;
-    background: #fff url(/images/g.png) no-repeat fixed right;
-    font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2", Georgia, serif; 
+    background: #fff;
+    font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2", Georgia, serif;
     font-size: 14px;
     line-height: 20px;
     color: #555;
@@ -61,7 +61,7 @@ HEADER
 ======================== */
 
 #header {
-    height: 100px;
+    height: 70px;
     width: 100%;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     background-color: #fff;
@@ -72,63 +72,59 @@ HEADER
 
 #headerwrap {
     width: 970px;
-    margin: 0 auto;
+    margin: 0 auto;        
     position: relative;
+    text-transform: uppercase;
+}
+#nav{
 }
 
-#headerwrap .menu {
-    position: absolute;
-    left: 20px;
-    top: 20px;
+a.nologo {
+  width: 50px;
+  height: 50px;
+  background: url(/images/square.png) no-repeat;
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 0px;      
 }
 
-#headerwrap .nav2 {
-    position: absolute;
-    left: 220px;
-    top: 20px;
+a.nologo span { display: none; }
+
+
+#nav ul {
+  list-style: none;           
+  margin-top: 20px;
+  margin-left: 130px;
 }
-
-#headerwrap .nav3 {
-    position: absolute;
-    left: 330px;
-    top: 20px;
+        
+#nav li a {
+  width: 140px;
+  border: 0px;
+  display: block;
+  float: left;
+  margin-top: 30px;
+  padding: 0px 0px;
+  text-decoration: none;
 }
-
-#headerwrap .nav1 a, #headerwrap .nav2 a, #headerwrap .nav3 a {
-    
-    color: #555;
-    text-decoration: none;
-    font-size: 14px;
+#nav li a:hover {   
+  color: #E20131;
 }
-
-#headerwrap .nav1 a.active, #headerwrap .nav2 a.active, #headerwrap .nav3 a.active {
-    color: #000;
-    text-decoration: underline;
-}
-
-#headerwrap .nav1 a:hover, #headerwrap .nav2 a:hover, #headerwrap .nav3 a:hover {
-    text-decoration: underline;
-}
-
-
-/* =====================
-
-FOOTER
-
-======================== */
+/* FOOTER */
 
 #footer {
-    border-top: 1px solid rgba(0,0,0,0.2);
-    position: relative;
-    display: block;
-    margin-top: 20px;
-    padding-top: 20px;
-    font-size: 12px;
-    color: #555;
+  color: #a9a9a9;
+  font-size: 12px;
+  line-height: 54px;
+  border-top: 3px double #cfcfcf;
 }
 
-#footer .left {
-    float: none;
+#footer a {
+  color: #a9a9a9;
+}
+
+#footer .copyright {
+  float: right;
 }
 
 
@@ -240,19 +236,22 @@ CONTENT AREA
 HOMEPAGE / WORK
 
 ======================== */
+#intro{
+  background: #fff url(/images/g.png) no-repeat right;
+  border-bottom: 1px solid #CCC;
+}
 
-body#home h1 {
+#intro h1 {
     font-size: 50px;
     line-height: 60px;
-    width: 640px;
-    background: url(/_img/bg_slash.png) no-repeat top right;
-    padding-right: 110px;
     color: #555;
     float: left;
     margin-right: 20px;
+    padding: 40px 0px;
     -webkit-text-stroke: 1px transparent;
-    padding-bottom: 40px;
 }
+             
+
 
 body#home h1 span {
     color: #000;
